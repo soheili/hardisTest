@@ -108,3 +108,16 @@ intellij IDEA
 2- Implementing POJOs (model classes):class AllErrors and  Reference
 3- Implementing the Service=> ReferenceService
 
+--------------------------------------------------------
+results:
+1460100040;R;45.12;27
+1460900848;G;12.0;145
+1462100044;G;5.56;19
+1462100403;B;105.23;97
+1462100403;A;100.1;9
+
+
+{"inputFile":"/Users/sohei/OneDrive/Bureau/textFile.txt","references":[{"numReference":"1460100040","size":27,"price":45.12,"color":"R"},{"numReference":"1460900848","size":145,"price":12.0,"color":"G"},{"numReference":"1462100044","size":19,"price":5.56,"color":"G"},{"numReference":"1462100403","size":97,"price":105.23,"color":"B"}],"errors":[{"line":4,"message":"Incorrect value for color","value":"1462100403;A;100.1;9"},{"line":5,"message":"Incorrect number of arguments","value":""}]}
+
+
+<?xml version='1.0' encoding='UTF-8'?><Report><inputFile>/Users/sohei/OneDrive/Bureau/textFile.txt</inputFile><references><references numReference="1460100040" size="27" price="45.12" color="R"/><references numReference="1460900848" size="145" price="12.0" color="G"/><references numReference="1462100044" size="19" price="5.56" color="G"/><references numReference="1462100403" size="97" price="105.23" color="B"/></references><errors><errors line="4" message="Incorrect value for color">1462100403;A;100.1;9</errors><errors line="5" message="Incorrect number of arguments"></errors></errors></Report>
