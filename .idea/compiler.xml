@@ -11,5 +11,8 @@
         <module name="report" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hardisTest" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

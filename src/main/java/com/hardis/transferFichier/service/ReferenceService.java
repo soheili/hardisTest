@@ -1,17 +1,15 @@
 package com.hardis.transferFichier.service;
 
 
-
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator;
-
-
+import com.hardis.transferFichier.exceptions.AllExceptions;
+import com.hardis.transferFichier.model.AllErrors;
 import com.hardis.transferFichier.model.Reference;
 import com.hardis.transferFichier.model.Report;
 import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
-
 
 import java.io.File;
 import java.io.IOException;
@@ -27,8 +25,13 @@ public class ReferenceService {
         Report report = new Report(inputFile);
         for (int i = 0; i < data.size(); i++) {
             String line = data.get(i);
-            Reference reference = new Reference(line);
-            report.addReference(reference);
+            try {
+                Reference reference = new Reference(line);
+                report.addReference(reference);
+            } catch (AllExceptions ex){
+                AllErrors error = new AllErrors(i, ex.getMessage(),line);
+                report.addError(error);
+            }
         }
         return report;
     }

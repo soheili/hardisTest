@@ -2,7 +2,6 @@ package com.hardis.transferFichier.model;
 
 import java.util.ArrayList;
 import java.util.List;
-
 public class Report {
     private String inputFile;
     private List<Reference> references;
@@ -14,7 +13,7 @@ public class Report {
         this.errors = new ArrayList<>();
     }
 
-    public String Report() {
+    public String getInputFile() {
         return inputFile;
     }
 

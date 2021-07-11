@@ -3,7 +3,7 @@ package com.hardis.transferFichier.model;
 import com.hardis.transferFichier.exceptions.AllExceptions;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-
+import com.hardis.transferFichier.exceptions.AllExceptions;
 
 class ReferenceTest {
 

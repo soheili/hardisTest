@@ -1,0 +1,7 @@
+com\hardis\transferFichier\model\AllErrors.class
+com\hardis\transferFichier\model\ColorRGB.class
+com\hardis\transferFichier\AppMain.class
+com\hardis\transferFichier\exceptions\AllExceptions.class
+com\hardis\transferFichier\model\Report.class
+com\hardis\transferFichier\model\Reference.class
+com\hardis\transferFichier\service\ReferenceService.class
